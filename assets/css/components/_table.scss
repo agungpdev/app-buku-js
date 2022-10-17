@@ -1,0 +1,62 @@
+table,
+th,
+td {
+  border: 1px solid rgba(128, 128, 128, 0.342);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+  font-size: 14px;
+}
+th {
+  padding: 5px 10px;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #e2e7f09a;
+}
+
+.danger-status {
+    color: #fff !important;
+    display: inline-block;
+    font-weight: 400 !important;
+    border-radius: 5px;
+    background-color: $bgdanger;
+    padding: 3px 8px;
+}
+.success-status {
+    color: #fff !important;
+    display: inline-block;
+    font-weight: 400 !important;
+    border-radius: 5px;
+    background-color: $bgsuccess;
+    padding: 3px 8px;
+}
+
+.table-icon {
+  font-size: 16px;
+  padding: 0 2px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1px solid $text;
+  }
+}
+.icon-edit {
+  color: $secondary;
+}
+.icon-check {
+  color: $bgsuccess;
+}
+.icon-uncheck {
+  color: $secondary;
+}
+.icon-delete {
+  color: $bgdanger;
+}

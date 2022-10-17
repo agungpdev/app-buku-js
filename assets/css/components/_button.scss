@@ -1,0 +1,44 @@
+button{
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #C850C0;
+    color: $netral;
+    text-decoration: none;
+    display: inline-block;
+
+    &-primary{
+        border-radius: 5px;
+        transition: .3s;
+        &:hover{
+            background-color: #b43aac;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 14px;
+        }
+    }
+    &-line{
+        background: none;
+        padding: 5px 20px;
+        border: 1px solid $primary;
+        color: $shadow;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    &-search{
+        border-radius: 20px;
+        padding: 8px 25px;
+    }
+    &-text{
+        background: none;
+        color: $primary;
+    }
+}
