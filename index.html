@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>App Buku JS Agung</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar-container">
+      <div class="navbar-wrap">
+        <div class="navbar">
+          <div class="row jc-sbetween ai-center">
+            <div class="navbar-left">
+              <div class="navbar-left-hamburger">
+                <i class="uil uil-bars navbar-left-icon" id="hamburger-menu"></i>
+              </div>
+              <div class="navbar-left-books">
+                <i class="uil uil-swatchbook navbar-left-icon"></i>
+                <span>Books</span>
+              </div>
+            </div>
+            <div class="navbar-right">
+              <div class="navbar-right-search">
+                <i class="uil uil-search navbar-right-icon search-btn"></i>
+              </div>
+              <div class="navbar-right-darkmode land-none">
+                <i class="uil uil-brightness-low navbar-right-icon"></i>
+              </div>
+              <div class="navbar-right-message land-none">
+                <i class="uil uil-message navbar-right-icon"></i>
+              </div>
+              <div class="navbar-right-notif land-none">
+                <i class="uil uil-bell navbar-right-icon"></i>
+              </div>
+              <div class="navbar-right-profile land-none">
+                <img src="assets/images/avatar.jpg" alt="" class="img-avatar">
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <div class="search-wrap">
+              <input type="text" class="search-wrap-control" id="search-input" placeholder="Search">
+              <i class="uil uil-times search-wrap-icon close-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-navbar"></div>
+  </header>
+
+  <main>
+    <section class="main">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-header-logo">
+            <h3>A<span>gung</span></h3>
+          </div>
+        </div>
+        <div class="sidebar-main">
+          <div class="sidebar-user">
+            <img src="assets/images/avatar.jpg" alt="" class="img-profile">
+            <h5 class="user-name">Agung perdana</h5>
+            <span class="role-admin">Administrator</span>
+          </div>
+          <div class="sidebar-content">
+            <nav class="nav-sidebar">
+              <ol class="nav-sidebar-list">
+                <li class="nav-sidebar-list-item"> <span><i
+                  class="uil uil-airplay nav-icon"></i><a href="" class="nav-sidebar-link"> Dashboard</a></span> <i class="uil uil-angle-down nav-icon side-arrow"></i>
+                </li>
+                <li class="nav-sidebar-list-item"><span><i
+                  class="uil uil-layer-group nav-icon"></i><a href="" class="nav-sidebar-link"> Books</a></span> <i class="uil uil-angle-down nav-icon side-arrow"></i>
+                </li>
+                <li class="nav-sidebar-list-item"><span><i
+                  class="uil uil-box nav-icon"></i><a href="" class="nav-sidebar-link"> Category</a></span> <i class="uil uil-angle-down nav-icon side-arrow"></i></li>
+                <li class="nav-sidebar-list-item"><span><i
+                  class="uil uil-book nav-icon"></i><a href="" class="nav-sidebar-link"> Unread Book</a></span> <i class="uil uil-angle-down nav-icon side-arrow"></i>
+                </li>
+                <li class="nav-sidebar-list-item"><span><i
+                  class="uil uil-book-open nav-icon"></i><a href="" class="nav-sidebar-link"> Already Book</a></span> <i
+                    class="uil uil-angle-down nav-icon side-arrow"></i></li>
+                <li class="nav-sidebar-list-item"><span><i
+                  class="uil uil-setting nav-icon"></i><a href="" class="nav-sidebar-link"> Settings</a></span> <i class="uil uil-angle-down nav-icon side-arrow"></i>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </aside>
+      <article class="main-content">
+        <div class="main-header ts-wrap">
+          <div class="main-say col12-tabletSmall">
+            <h4>Hi, Agung welcome back!</h4>
+            <span>Dashboard / books</span>
+          </div>
+          <div class="main-btn col12-tabletSmall">
+            <a href="#" class="btn btn-primary modal-open">Tambah Buku</a>
+          </div>
+          <div class="modal">
+            <div class="col6 col8-tablet modal-content">
+              <div class="modal-title">
+                <h4>Masukkan Data Buku</h4>
+                <span>untuk menambahkan data buku, masukkan data sesuai inputan!</span>
+              </div>
+              <div class="modal-close">
+                <a href="#" class="close-modal"><i class="uil uil-times-circle modal-close-btn"></i></a>
+              </div>
+              <div class="form">
+                <form action="" id="inputData">
+                  <div class="row">
+                    <div class="col12">
+                      <div class="form-group">
+                        <label for="title"></label>
+                        <input type="text" name="title" id="title" placeholder="nama buku" class="form-control"
+                          required>
+                      </div>
+                      <div class="form-group">
+                        <label for="authors"></label>
+                        <input type="text" name="authors" id="authors" placeholder="penulis buku" class="form-control"
+                          required>
+                      </div>
+                      <div class="form-group">
+                        <label for="years"></label>
+                        <input type="number" name="years" id="years" placeholder="tahun penerbitan buku"
+                          class="form-control" required>
+                      </div>
+                      <div class="check-group">
+                        <label for="IsComplete">Already read?</label>
+                        <input type="checkbox" name="IsComplete" id="IsComplete" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <button id="submitBuku" type="submit" class="btn btn-primary">Tambah Buku</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-content-app">
+          <div class="card-wrap wrap-l l-jcbetween">
+            <div class="col3 col5-laptop col12-tabletSmall card card-body totalBuku">
+              <h5>Total Buku</h5>
+              <span id="totalBuku"></span>
+            </div>
+            <div class="col3 col5-laptop col12-tabletSmall card card-body alreadyTotal">
+              <h5>Sudah Dibaca</h5>
+              <span id="alreadyTotal">0</span>
+            </div>
+            <div class="col3 col5-laptop col12-tabletSmall card card-body unreadTotal">
+              <h5>Belum Dibaca</h5>
+              <span id="unreadTotal">0</span>
+            </div>
+            <div class="col3 col5-laptop col12-tabletSmall card card-body">
+              <h5>Category</h5>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="books-data">
+            <div class="wrap-main wrap-l">
+              <div class="col8 col12-laptop card card-body data-buku">
+                <div class="section-title">
+                  <h5>Data Buku</h5>
+                  <span>Data semua buku</span>
+                </div>
+                <div class="data-buku-item">
+                  <table id="allBooks">
+                    <thead>
+                      <tr>
+                        <th>Nama Buku</th>
+                        <th>Tahun</th>
+                        <th>Penulis</th>
+                        <th class="status-table">Status</th>
+                        <th class="action-table">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="books" class="booksData">
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col4 col12-laptop card card-body">
+                <div class="section-title">
+                  <h5>Belum Dibaca</h5>
+                  <span>Data semua buku yang belum dibaca</span>
+                </div>
+                <div class="data-buku-item">
+                  <table id="unreadBooks">
+                    <thead>
+                      <tr>
+                        <th>Nama Buku</th>
+                        <th>Tahun</th>
+                        <th>Penulis</th>
+                        <th>Status</th>
+                        <th class="action-table">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="unread" class="ts-scroll">
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col12 done-read card card-body">
+                <div class="section-title">
+                  <h5>Sudah Dibaca</h5>
+                  <span>data semua buku yang sudah dibaca</span>
+                </div>
+                <div class="data-buku-item">
+                  <table id="alreadyBooks">
+                    <thead>
+                      <tr>
+                        <th>Nama Buku</th>
+                        <th>Tahun</th>
+                        <th>Penulis</th>
+                        <th class="status-table">Status</th>
+                        <th class="action-table">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="already">
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
