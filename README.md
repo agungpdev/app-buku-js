@@ -12,6 +12,7 @@ tool atau alat yang digunakan untuk membangun aplikasi ini adalah:
 - Html
 - CSS
 - Vanila Javascript
+- Iconscout
 
 <h4>Fitur</h4>
 
