@@ -6,6 +6,7 @@ app buku js ini merupakan implementasi dari materi javascript yaitu web storage 
 sehingga bisa digunakan sebagai prototyping atau presentasi project kepada client sehingga terlihat lebih interaktif dengan user.
 Sebagai catatan maksimal penyimpanan web storage hanya 10Mb.
 
+![App-Buku-JS-Agung (1)](https://user-images.githubusercontent.com/50897936/197508187-9b1477da-461b-431f-8868-cb0aaac70d0f.png)
 <h4>Tools</h4>
 
 tool atau alat yang digunakan untuk membangun aplikasi ini adalah:
@@ -13,6 +14,8 @@ tool atau alat yang digunakan untuk membangun aplikasi ini adalah:
 - CSS
 - Vanila Javascript
 - Iconscout
+
+![App-Buku-JS-Agung (2)](https://user-images.githubusercontent.com/50897936/197508205-17219911-3a56-43eb-8c10-49fe69c6828c.png)
 
 <h4>Fitur</h4>
 
